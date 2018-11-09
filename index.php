@@ -27,7 +27,9 @@
         <p>
             <a href="pages/creacion_modelos.php" class="btn btn-primary">Creaci&oacute;n de modelos</a>
         </p>
-
+        <p>
+            <a href="pages/creacion_controlador.ph">Creaci&oacute;n de controladores</a>
+        </p>
     </div>
 
 

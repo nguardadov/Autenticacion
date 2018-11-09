@@ -17,5 +17,8 @@
         <p>
             <a href="pages/creacion_rutas.php" class="btn btn-primary">Creaci&oacute;n de Rutas</a>
         </p>
+        <p>
+            <a href="pages/creacion_vistas.php" class="btn btn-primary">Creaci&oacute;n de Vistas</a>
+        </p>
     </div> 
     <?php include('layouts/scripts.php');?>

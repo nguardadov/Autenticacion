@@ -89,6 +89,74 @@
                 </code>
             </pre>
             </li>
+            <li>
+                Crearemos el m&eacute;todo profile, el cual nos renderiza el perfil del usuario que ha ingresado en el sistema.
+                <pre>
+                    <code class="js">
+                        /*nos dirigira al perfil */
+                        AuthController.profile = function (req, res) {
+                            return res.render('profile');
+                        }
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code class="js">
+                        /*Para ingresar al sistema*/
+                        AuthController.signin = function (req, res,next) {
+                            var data = {};
+                            User.authenticate(req.body.email, req.body.password, (error, user) => {
+                                if (error || !user) {
+                                    res.render('signin', { err: error, email: req.body.email });
+                                    //return res.send("Ddd");
+                                }
+                                else {
+                                        data.userId= user._id.toString(),
+                                        data.email= user.email,
+                                        data.password=user.password
+                                    
+                                    bcrypt.hash(data.userId, 10, function (err, hash) {
+                                        if (err) {
+                                            next(err);
+                                        }
+                                        console.log(hash + " dddd");
+                                        data.userId = hash;
+                                        req.session.user = JSON.stringify(data);
+                                        return res.redirect('/users/profile');
+                                    });
+
+                                }
+                            });
+                        };
+                    </code>       
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code class="js">
+                        AuthController.logout = function (req, res, next) {
+                            if (req.session) {
+                                req.session.destroy(function (err) {
+                                    if (err) {
+                                        next(err);
+                                    }
+                                    else {
+                                        res.redirect('/');
+                                    }
+                                });
+                            }
+                        }
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code class="js">
+                        module.exports = AuthController;
+                    </code>
+                </pre>
+            </li>
           </ol>  
         </p>
     </div>

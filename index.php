@@ -13,5 +13,3 @@
         </p>
     </div> 
     <?php include('layouts/scripts.php');?>
-</body>
-</html>

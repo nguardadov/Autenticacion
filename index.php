@@ -14,5 +14,8 @@
         <p>
             <a href="pages/creacion_middleware.php" class="btn btn-primary">Creaci&oacute;n de Middleware</a>
         </p>
+        <p>
+            <a href="pages/creacion_rutas.php" class="btn btn-primary">Creaci&oacute;n de Rutas</a>
+        </p>
     </div> 
     <?php include('layouts/scripts.php');?>

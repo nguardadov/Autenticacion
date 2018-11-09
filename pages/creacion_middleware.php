@@ -7,7 +7,7 @@
                 Dentro de la carpeta creada crearemos el archivo <code>AuthMiddleware</code>
             </li>
             <li>
-                Creamos le m&eacute; para comprobar si un usario esta loguado.
+                Creamos le m&eacute; para comprobar si un usario esta logeado.
                 <pre>
                     <code>
                     //middleware que verifica si una persona esta logueada

@@ -33,7 +33,8 @@
                </p>
             </li>
             <li>
-                Por medio de la consola nos dirigiremos al proyecto que hemos creado
+                Por medio de la consola nos dirigiremos al proyecto que hemos creado y ejecutaremos el siguiente comando:
+                <code>npm install</code>
             </li>
             <li>
                 Instalaremos las siguientes librerias:

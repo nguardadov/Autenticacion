@@ -9,7 +9,7 @@
             </li>
             <li>        
                 <p>
-                    Para realizar el contralador requeriremos las siguientes librerias <br>
+                    Para realizar el contralador requeriremos las siguientes librerias:
                     <pre>
                         <code class="js">
                             const mongoose = require('mongoose'); //libreria para el manejo a la conexion de bases de datos
@@ -23,7 +23,6 @@
             <li>
                <p>
                Realizaremos un metodo que nos renderizara una vista que contien el formulario para ingresar al sistema
-               <br>
                 <pre>
                     <code class="js">
                         /*nos devuelve la vista signin que es para ingresar al sistema */

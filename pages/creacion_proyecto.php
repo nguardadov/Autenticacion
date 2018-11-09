@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php include('../layouts/link.php');?>
-<body>
-    <header class="mt-1">
-        <h1 class="text-center">
-            Autenticación en
-            <code>nodejs</code>.
-        </h1>
-    </header>
+
     <div class="container mt-5">
         <h2>Creacion del proyecto</h2>
         <ol>

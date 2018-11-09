@@ -1,6 +1,6 @@
 <?php include('layouts/link.php');?>
     <div class="container mt-5 row">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-4 offset-md-5 col-sm-12">
             <p>
                 <a href="pages/creacion_proyecto.php" class="btn btn-primary">Creaci&oacute;n del Proyecto</a>
             </p>

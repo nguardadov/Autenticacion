@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <?php include('../layouts/link.php');?>
-
+<?php include('../layouts/link.php');?>
     <div class="container mt-5">
         <h2>Creacion del proyecto</h2>
         <ol>
@@ -38,6 +35,3 @@
         </ol>
         <a href="../index.php" class="btn btn-primary">Inicio</a>
     </div>
-    <?php include('../layouts/scripts.php');?>
-</body>
-</html>

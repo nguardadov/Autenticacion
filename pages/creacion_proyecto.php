@@ -40,7 +40,7 @@
                 Instalaremos las siguientes librerias:
                 <ul>
                     <li><code>mongoose</code>: Nos servira para la creaci&oacute;n de modelos y conexi&oacuten a la base de datos</li>
-                    <li><code>mongo-store</code>: Alamcenar sesiones en la base de datos</li>
+                    <li><code>connect-mongo</code>: Alamcenar sesiones en la base de datos</li>
                     <li><code>bcrypt</code>: Encriptar contrase&ntilde;as</li>
                     <li><code>express-session</code>: Manejo de sesiones</li>
                 </ul>

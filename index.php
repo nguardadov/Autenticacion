@@ -1,6 +1,9 @@
 <?php include('layouts/link.php');?>
     <div class="container mt-5">
         <p>
+            <a href="pages/archivos_config.php" class="btn btn-primary">Coxeci&oacute;n a la base de datos</a>
+        </p>
+        <p>
             <a href="pages/creacion_proyecto.php" class="btn btn-primary">Creaci&oacute;n del Proyecto</a>
         </p>
         <p>

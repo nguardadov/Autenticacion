@@ -33,5 +33,4 @@
                </p>
             </li>
         </ol>
-        <a href="../index.php" class="btn btn-primary">Inicio</a>
     </div>

@@ -46,7 +46,7 @@
                 </pre>
             </li>
             <li>
-            Realizaremos el m&eacute;do <code>store</code> para crear a los usuarios.
+            Realizaremos el m&eacute;todo <code>store</code> para crear a los usuarios.
             <pre>
                 <code class="js">
                     /*Para crear el usuario*/
@@ -102,10 +102,12 @@
             </li>
             <li>
                 <pre>
+                    Realizaremos el m&eacute;todo para ingresar al sistema.
                     <code class="js">
                         /*Para ingresar al sistema*/
                         AuthController.signin = function (req, res,next) {
                             var data = {};
+                            //user autentication es el metodo que nos permitira ingresar al sistema
                             User.authenticate(req.body.email, req.body.password, (error, user) => {
                                 if (error || !user) {
                                     res.render('signin', { err: error, email: req.body.email });
@@ -116,13 +118,15 @@
                                         data.email= user.email,
                                         data.password=user.password
                                     
+                                    //este m&eacute;todo nos encriptara el userId para que sea alamcenado en la sesion
                                     bcrypt.hash(data.userId, 10, function (err, hash) {
                                         if (err) {
                                             next(err);
                                         }
-                                        console.log(hash + " dddd");
                                         data.userId = hash;
+                                        //parseamos el objeto a cadena
                                         req.session.user = JSON.stringify(data);
+                                        //si es correcto nos dirigira al perfil del usuario que esta ingresando.
                                         return res.redirect('/users/profile');
                                     });
 
@@ -133,15 +137,16 @@
                 </pre>
             </li>
             <li>
+                Crearemos el m&eacute;todo que nos permitira desloguearnos del sitema.
                 <pre>
                     <code class="js">
                         AuthController.logout = function (req, res, next) {
-                            if (req.session) {
-                                req.session.destroy(function (err) {
-                                    if (err) {
+                            if (req.session) { //si la session existe
+                                req.session.destroy(function (err) { // destruimos la sesion
+                                    if (err) { // si produce un error
                                         next(err);
                                     }
-                                    else {
+                                    else { //si la sesion se destruyo nos dirigira al index
                                         res.redirect('/');
                                     }
                                 });

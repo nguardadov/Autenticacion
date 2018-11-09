@@ -22,10 +22,10 @@
 
     <div class="container mt-5">
         <p>
-            <a href="creacion_proyecto.html" class="btn btn-primary">Creaci&oacute;n del proyecto</a>
+            <a href="pages/creacion_proyecto.php" class="btn btn-primary">Creaci&oacute;n del proyecto</a>
         </p>
         <p>
-            <a href="creacion_modelos.html" class="btn btn-primary">Creaci&oacute;n de modelos</a>
+            <a href="pages/creacion_modelos.php" class="btn btn-primary">Creaci&oacute;n de modelos</a>
         </p>
 
     </div>

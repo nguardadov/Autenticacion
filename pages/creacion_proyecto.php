@@ -1,5 +1,5 @@
 <?php include('../layouts/link.php');?>
-    <div class="container mt-5 row">
+    <div class="container mt-5">
         <h2>Creacion del proyecto</h2>
         <ol>
             <li>

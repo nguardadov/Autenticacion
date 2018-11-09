@@ -156,6 +156,7 @@
                 </pre>
             </li>
             <li>
+            Exportaremos el controlador para que este sea accesible por toda la aplicaci&oacute;n        
                 <pre>
                     <code class="js">
                         module.exports = AuthController;

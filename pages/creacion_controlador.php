@@ -30,8 +30,8 @@
                             res.render('signin'); //
                         }     
                         </code>
-                        <code>render</code> recibe como parametro el nombre de la vista que renderizara.
                     </pre>
+                    <code>render</code> recibe como parametro el nombre de la vista que renderizara.
                </p>
             </li>
             <li>

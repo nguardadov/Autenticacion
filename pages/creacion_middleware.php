@@ -1,5 +1,6 @@
 <?php include('../layouts/link.php');?>
-    <h2>Creaci&oacute;n de Middleware</h2>
+   <div class="container">
+   <h2>Creaci&oacute;n de Middleware</h2>
     <p>
         <ol>
             <li>Crearemos la carpeta <code>middlewares</code></li>
@@ -47,5 +48,8 @@
                 </pre>
             </li>
         </ol>
+        
     </p>
+    <?php include('../layouts/boton_inicio.php');?> 
+   </div>
 <?php include('../layouts/scripts.php');?> 

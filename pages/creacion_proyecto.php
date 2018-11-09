@@ -33,4 +33,5 @@
                </p>
             </li>
         </ol>
+        <?php include('../layouts/boton_inicio.php');?> 
     </div>

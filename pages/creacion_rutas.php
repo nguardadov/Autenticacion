@@ -51,5 +51,6 @@
                 </li>
             </ol>
         </p>
+        <?php include('../layouts/boton_inicio.php');?> 
     </div>
 <?php include('../layouts/scripts.php');?> 

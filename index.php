@@ -11,5 +11,8 @@
         <p>
             <a href="pages/creacion_controlador.php" class="btn btn-primary">Creaci&oacute;n de controladores</a>
         </p>
+        <p>
+            <a href="pages/creacion_middleware.php" class="btn btn-primary">Creaci&oacute;n de controladores</a>
+        </p>
     </div> 
     <?php include('layouts/scripts.php');?>

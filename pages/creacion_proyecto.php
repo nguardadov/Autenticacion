@@ -32,6 +32,19 @@
                    </ul>
                </p>
             </li>
+            <li>
+                Por medio de la consola nos dirigiremos al proyecto que hemos creado
+            </li>
+            <li>
+                Instalaremos las siguientes librerias:
+                <ul>
+                    <li><code>mongoose</code>: Nos servira para la creaci&oacute;n de modelos y conexi&oacuten a la base de datos</li>
+                    <li><code>mongo-store</code>: Alamcenar sesiones en la base de datos</li>
+                    <li><code>bcrypt</code>: Encriptar contrase&ntilde;as</li>
+                    <li><code>express-session</code>: Manejo de sesiones</li>
+                </ul>
+            </li>
+            Haciendo uso del siguiente comando: <code>npm i mongoose mongo-store bcrypt express-session</code>
         </ol>
         <?php include('../layouts/boton_inicio.php');?> 
     </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?php include('layouts/link.php');?>
+    <?php include('../layouts/link.php');?>
 <body>
 
     <header class="mt-1">
@@ -45,6 +45,6 @@
             </li>
         </ol>
     </div>
-    <?php include('layouts/scripts.php');?>
+    <?php include('../layouts/scripts.php');?>
 </body>
 </html>

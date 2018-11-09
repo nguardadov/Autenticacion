@@ -46,6 +46,24 @@
                     </code>
                 </pre>
             </li>
+            <li>
+                Creamos el archivo <code>signup.pug</code>, el cual tendra lo siguiente:
+                <pre>
+                    <code class="js">
+                    h1 Signup
+                    a(href="/") Inicio
+                    div= err
+                    form(method='POST' action='/users/signup')
+                        div
+                            input(type='email',placeholder='Ingrese su correo' name='email')
+                        br
+                        div
+                            input(type='password', placeholder='*********' name='password')
+                        br
+                        input(type='submit' value='Registrar')
+                    </code>
+                </pre>
+            </li>
         </ol>
     </p>
     <?php include('../layouts/boton_inicio.php');?> 
